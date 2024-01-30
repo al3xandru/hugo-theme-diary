@@ -197,11 +197,13 @@ var handleScroll = function () {
   }
 };
 
+/*
 window.addEventListener(
   "scroll",
   debounce(handleScroll, 100, { maxWait: 100 }),
   false
 );
+*/
 
 document.querySelectorAll("table").forEach(function (elem) {
   elem.classList.add("table-striped");
