@@ -19,7 +19,7 @@
                 {{ end }}
             >
                 <div class="post-title">
-                    {{ .Title }}
+                  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
                     {{ if .Params.description }}
                     <div class="post-subtitle">
                         {{ .Params.description }}
@@ -70,7 +70,7 @@
                     {{.Content}}
                     {{ if not .Lastmod.IsZero }}
                     <HR width="100%" id="EOF">
-		    <p style="color:#777;">{{ i18n "last_mod_on" .Page.Lastmod }}</p>
+                    <p style="color:#777;"><a href="{{ .RelPermalink }}">&#8251;</a> {{ i18n "last_mod_on" .Page.Lastmod }}</p>
                     {{ end }}
                 </div>
             </div>
