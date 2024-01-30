@@ -70,7 +70,9 @@
                     {{.Content}}
                     {{ if not .Lastmod.IsZero }}
                     <HR width="100%" id="EOF">
-                    <p style="color:#777;"><a href="{{ .RelPermalink }}">&#8251;</a> {{ i18n "last_mod_on" .Page.Lastmod }}</p>
+                    <p id="cf" style="color:#777;">{{ i18n "last_mod_on" .Page.Lastmod }} <a href="{{ .RelPermalink }}" rel="bookmark">&#8251;</a></p>
+                    {{ else }}
+                    <p id="cf"><a href="{{ .RelPermalink }}" rel="bookmark">&#8251;</a></p>
                     {{ end }}
                 </div>
             </div>
