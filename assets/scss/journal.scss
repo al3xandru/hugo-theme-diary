@@ -726,15 +726,18 @@ a {
             text-decoration-style: 0.5px solid $color-accent;
             text-underline-position: under;
           }
+          /* disables changing color
           * {
             color: $dark-accent;
           }
-
+          */
+          /* allow underlining the title
           @media screen and (max-width: $single-column-max-width) {
             .post-item-title {
               text-decoration: none !important;
             }
           }
+          */
         }
       }
 
